@@ -21,6 +21,6 @@ export const bigCss = css`
 
   ${mediaQuery('xs')} {
     font-size: 3.5rem;
-    line-height: 3.75rem;
+    line-height: 4rem;
   }
 `;

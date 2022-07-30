@@ -16,11 +16,12 @@ export default function IntroduceSection() {
         variants={staggerFourFive}
         initial="initial"
         whileInView="animate"
-        exit="exit"
         viewport={{ once: true, amount: 0.6 }}
         css={css`
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          height: 95vh;
         `}
       >
         <MotionSpan key="a">성공회대에</MotionSpan>

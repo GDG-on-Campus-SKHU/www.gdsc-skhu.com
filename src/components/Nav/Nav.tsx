@@ -3,6 +3,8 @@ import { css } from '@emotion/react';
 
 import { layoutCss } from '../../styles/constants/layout';
 
+const GDSC_LINK = 'https://gdsc.community.dev/';
+
 export default function Nav() {
   return (
     <nav
@@ -28,9 +30,9 @@ export default function Nav() {
       </Link>
 
       <div>
-        <Link href={'https://gdsc.community.dev/'}>
-          <a>GDSC</a>
-        </Link>
+        <a href={GDSC_LINK} target="_blank" rel="noreferrer">
+          GDSC
+        </a>
       </div>
     </nav>
   );

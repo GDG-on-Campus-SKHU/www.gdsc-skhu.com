@@ -2,8 +2,8 @@ import { css } from '@emotion/react';
 import { Canvas } from '@react-three/fiber';
 
 import IntroduceSection from '../components/IntroduceSection';
+import RecruitSection from '../components/RecruitSection';
 import Scene from '../components/Scene';
-import WaitSection from '../components/WaitSection';
 import { layoutCss } from '../styles/constants/layout';
 
 export default function Root() {
@@ -42,7 +42,7 @@ export default function Root() {
           `}
         >
           <IntroduceSection />
-          <WaitSection />
+          <RecruitSection />
         </div>
       </main>
     </>
