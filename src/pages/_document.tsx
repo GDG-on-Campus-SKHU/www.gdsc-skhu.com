@@ -1,9 +1,13 @@
 import { Head, Html, Main, NextScript } from 'next/document';
 
+import { IS_PRODUCTION } from '../constants/common';
+
 const URL = 'www.gdsc-skhu.com';
 const TITLE = 'GDSC at SKHU';
 const DESCRIPTION = 'Google developer student clubs at SKHU';
 const IMAGE = '/gdsc_skhu.png';
+
+const GA_ID = 'G-SF5GEJR7Z9';
 
 export default function Document() {
   return (
@@ -34,6 +38,22 @@ export default function Document() {
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
         <meta name="twitter:image" content={IMAGE} />
+
+        {/* for google analytics */}
+        {IS_PRODUCTION && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');`,
+              }}
+            />
+          </>
+        )}
       </Head>
       <body>
         <Main />

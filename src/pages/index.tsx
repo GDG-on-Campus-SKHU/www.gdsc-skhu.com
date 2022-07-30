@@ -5,9 +5,12 @@ import { Canvas } from '@react-three/fiber';
 import IntroduceSection from '../components/IntroduceSection';
 import RecruitSection from '../components/RecruitSection';
 import Scene from '../components/Scene';
+import useMediaQuery from '../hooks/use-media-query';
 import { layoutCss } from '../styles/constants/layout';
 
 export default function Root() {
+  const isSmallToFov = useMediaQuery(650);
+
   return (
     <>
       <Head>
@@ -23,7 +26,7 @@ export default function Root() {
           z-index: -1;
         `}
       >
-        <Canvas camera={{ position: [0, -10, 65], fov: 50 }} dpr={[1, 2]}>
+        <Canvas camera={{ position: [0, -10, 65], fov: isSmallToFov ? 80 : 50 }} dpr={[1, 2]}>
           <Scene />
         </Canvas>
       </div>
