@@ -3,11 +3,14 @@ import { ContactShadows, OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
+import useUserAgent from '../../hooks/use-user-agent';
 import { colors } from '../../styles/constants';
 import Pill from '../common/Pill';
 import Rig from '../common/Rig';
 
 export default function Scene() {
+  const { isDesktop } = useUserAgent();
+
   return (
     <>
       <pointLight position={[100, 100, 100]} intensity={0.8} />
@@ -17,7 +20,7 @@ export default function Scene() {
         position={[-7, 25, 13]}
         intensity={0.85}
       />
-      <OrbitControls enableZoom={false} />
+      {isDesktop() && <OrbitControls enableZoom={false} />}
 
       <Suspense fallback={null}>
         <group position={[0, 10, 0]}>
