@@ -10,7 +10,7 @@ export default function Nav() {
     <nav
       css={css`
         ${layoutCss};
-        height: 50px;
+        height: 60px;
 
         position: fixed;
         top: 0;
@@ -25,7 +25,15 @@ export default function Nav() {
     >
       <Link href="/">
         <a>
-          <h1>GDSC AT SKHU</h1>
+          <h1
+            css={css`
+              line-height: 1.25rem;
+            `}
+          >
+            Google Developer Student Clubs
+            <br />
+            at SKHU
+          </h1>
         </a>
       </Link>
 

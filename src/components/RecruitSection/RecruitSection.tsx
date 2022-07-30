@@ -8,7 +8,8 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors } from '../../styles/constants';
 
-const CORE_MEMBER_RECRUIT_LINK = 'https://forms.gle/an1CTriq5R8ddmDJ6';
+const CORE_MEMBER_RECRUIT_LINK =
+  'https://boom-galleon-6d9.notion.site/Core-f428033a4e594672b27091d054d613b7';
 
 export default function RecruitSection() {
   return (
