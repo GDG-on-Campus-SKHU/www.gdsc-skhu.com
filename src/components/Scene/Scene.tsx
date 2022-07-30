@@ -16,7 +16,8 @@ export default function Scene() {
         position={[-7, 25, 13]}
         intensity={0.85}
       />
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
+
       <Suspense fallback={null}>
         <group position={[0, 10, 0]}>
           <Rig>

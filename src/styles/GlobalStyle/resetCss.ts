@@ -126,6 +126,8 @@ export const resetCss = css`
   }
   a {
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
   }
   table {
     border-collapse: collapse;
