@@ -3,6 +3,7 @@ import { ContactShadows, OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
+import { colors } from '../../styles/constants';
 import Pill from '../common/Pill';
 import Rig from '../common/Rig';
 
@@ -53,10 +54,14 @@ function Pills() {
 
   return (
     <group ref={groupRef} dispose={null}>
-      <Pill color="#EA4335" position={[-17.4, -1.96, -6.21]} rotation={[0, 20, 2.23]} />
-      <Pill color="#4285F4" position={[-4.8, -16.96, 2.16]} rotation={[0, 0.91, -2.1]} />
-      <Pill color="#EEB204" position={[30.9, -12.6, -17.01]} rotation={[0, 0.32, -0.86]} />
-      <Pill color="#0F9D58" position={[13.22, 5.99, 0.03]} rotation={[0, -0.23, 0.71]} />
+      <Pill color={colors.gdscRed} position={[-17.4, -1.96, -6.21]} rotation={[0, 20, 2.23]} />
+      <Pill color={colors.gdscBlue} position={[-4.8, -16.96, 2.16]} rotation={[0, 0.91, -2.1]} />
+      <Pill
+        color={colors.gdscYellow}
+        position={[30.9, -12.6, -17.01]}
+        rotation={[0, 0.32, -0.86]}
+      />
+      <Pill color={colors.gdscGreen} position={[13.22, 5.99, 0.03]} rotation={[0, -0.23, 0.71]} />
     </group>
   );
 }

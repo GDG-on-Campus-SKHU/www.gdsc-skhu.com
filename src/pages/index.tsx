@@ -1,8 +1,9 @@
 import { css } from '@emotion/react';
 import { Canvas } from '@react-three/fiber';
 
+import IntroduceSection from '../components/IntroduceSection';
 import Scene from '../components/Scene';
-import WaitSection from '../components/WaitSection';
+// import WaitSection from '../components/WaitSection';
 import { layoutCss } from '../styles/constants/layout';
 
 export default function Root() {
@@ -40,7 +41,9 @@ export default function Root() {
             padding-bottom: 64px;
           `}
         >
-          <WaitSection />
+          <IntroduceSection />
+
+          {/* <WaitSection /> */}
         </div>
       </main>
     </>

@@ -1,1 +1,2 @@
-export { layout } from './layout';
+export * from './colors';
+export * from './layout';

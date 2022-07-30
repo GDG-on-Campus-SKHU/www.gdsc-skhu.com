@@ -1,5 +1,6 @@
 import { css, Global } from '@emotion/react';
 
+import { colors } from '../constants/colors';
 import { resetCss } from './resetCss';
 
 export default function GlobalStyle() {
@@ -13,6 +14,8 @@ const globalCss = css`
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue',
       'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    color: ${colors.black};
+    background-color: ${colors.white};
 
     * {
       font-family: inherit;
