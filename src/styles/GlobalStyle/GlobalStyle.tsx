@@ -1,6 +1,6 @@
 import { css, Global } from '@emotion/react';
 
-import { colors } from '../constants/colors';
+import { colors, mediaQuery } from '../constants';
 import { resetCss } from './resetCss';
 
 export default function GlobalStyle() {
@@ -16,6 +16,7 @@ const globalCss = css`
       'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     color: ${colors.black};
     background-color: ${colors.white};
+    font-size: 16px;
 
     * {
       font-family: inherit;
@@ -25,6 +26,12 @@ const globalCss = css`
       box-sizing: border-box;
       word-break: keep-all;
       word-wrap: break-word;
+    }
+  }
+
+  ${mediaQuery('sm')} {
+    :root {
+      font-size: 14px;
     }
   }
 `;

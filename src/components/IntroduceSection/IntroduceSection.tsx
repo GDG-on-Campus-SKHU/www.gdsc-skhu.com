@@ -7,8 +7,7 @@ import {
   defaultFadeInVariants,
   staggerFourFive,
 } from '../../constants/motions';
-import { colors } from '../../styles/constants';
-import { paragraphCss } from '../../styles/constants/text';
+import { bigCss, colors, paragraphCss } from '../../styles/constants';
 
 export default function IntroduceSection() {
   return (
@@ -30,9 +29,7 @@ export default function IntroduceSection() {
           key="b"
           variants={defaultFadeInUpVariants}
           css={css`
-            font-size: 5rem;
-            font-weight: bold;
-            line-height: 6rem;
+            ${bigCss}
           `}
         >
           <span
@@ -72,7 +69,7 @@ export default function IntroduceSection() {
           key="p-a"
           css={css`
             ${paragraphCss}
-            margin-top: 60px;
+            margin-top: 3rem;
             line-height: 3rem;
           `}
           variants={defaultFadeInVariants}
@@ -93,8 +90,7 @@ function MotionSpan({ children }: PropsWithChildren<{}>) {
     <motion.span
       variants={defaultFadeInUpVariants}
       css={css`
-        font-size: 5rem;
-        font-weight: bold;
+        ${bigCss}
         line-height: 6rem;
       `}
     >

@@ -4,7 +4,7 @@ export default function WaitSection() {
   return (
     <section
       css={css`
-        height: 100vh;
+        margin-top: 200px;
       `}
     >
       <h2
