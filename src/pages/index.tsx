@@ -1,35 +1,14 @@
-import Head from 'next/head';
 import { css } from '@emotion/react';
-import { Canvas } from '@react-three/fiber';
 
+import SEO from '../components/common/SEO';
 import IntroduceSection from '../components/IntroduceSection';
 import RecruitSection from '../components/RecruitSection';
-import Scene from '../components/Scene';
-import useMediaQuery from '../hooks/use-media-query';
 import { layoutCss } from '../styles/constants/layout';
 
 export default function Root() {
-  const isSmallToFov = useMediaQuery(650);
-
   return (
     <>
-      <Head>
-        <title>GDSC at SKHU</title>
-      </Head>
-      <div
-        css={css`
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          z-index: -1;
-        `}
-      >
-        <Canvas camera={{ position: [0, -10, 65], fov: isSmallToFov ? 80 : 50 }} dpr={[1, 2]}>
-          <Scene />
-        </Canvas>
-      </div>
+      <SEO urlPath="" title="GDSC at SKHU" />
 
       <main
         css={css`

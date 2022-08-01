@@ -1,8 +1,10 @@
 import { Suspense, useRef } from 'react';
+import { css } from '@emotion/react';
 import { ContactShadows, OrbitControls } from '@react-three/drei';
-import { useFrame } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
+import useMediaQuery from '../../hooks/use-media-query';
 import useUserAgent from '../../hooks/use-user-agent';
 import { colors } from '../../styles/constants';
 import Pill from '../common/Pill';
@@ -10,36 +12,48 @@ import Rig from '../common/Rig';
 
 export default function Scene() {
   const { isDesktop } = useUserAgent();
+  const isSmallToFov = useMediaQuery(650);
 
   return (
-    <>
-      <pointLight position={[100, 100, 100]} intensity={0.8} />
-      <hemisphereLight
-        color="#ffffff"
-        groundColor="#b9b9b9"
-        position={[-7, 25, 13]}
-        intensity={0.85}
-      />
-      {isDesktop() && <OrbitControls enableZoom={false} />}
+    <div
+      css={css`
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+      `}
+    >
+      <Canvas camera={{ position: [0, -10, 65], fov: isSmallToFov ? 80 : 50 }} dpr={[1, 2]}>
+        <pointLight position={[100, 100, 100]} intensity={0.8} />
+        <hemisphereLight
+          color="#ffffff"
+          groundColor="#b9b9b9"
+          position={[-7, 25, 13]}
+          intensity={0.85}
+        />
+        {isDesktop() && <OrbitControls enableZoom={false} />}
 
-      <Suspense fallback={null}>
-        <group position={[0, 10, 0]}>
-          <Rig>
-            <Pills />
-          </Rig>
+        <Suspense fallback={null}>
+          <group position={[0, 10, 0]}>
+            <Rig>
+              <Pills />
+            </Rig>
 
-          <ContactShadows
-            rotation-x={Math.PI / 2}
-            position={[0, -35, 0]}
-            opacity={1}
-            width={100}
-            height={100}
-            blur={0.7}
-            far={100}
-          />
-        </group>
-      </Suspense>
-    </>
+            <ContactShadows
+              rotation-x={Math.PI / 2}
+              position={[0, -35, 0]}
+              opacity={1}
+              width={100}
+              height={100}
+              blur={0.7}
+              far={100}
+            />
+          </group>
+        </Suspense>
+      </Canvas>
+    </div>
   );
 }
 

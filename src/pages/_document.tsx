@@ -2,7 +2,6 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 import { IS_PRODUCTION } from '../constants/common';
 
-const URL = 'www.gdsc-skhu.com';
 const TITLE = 'GDSC at SKHU';
 const DESCRIPTION = 'Google developer student clubs at SKHU';
 const IMAGE = '/gdsc_skhu.png';
@@ -24,7 +23,6 @@ export default function Document() {
 
         <link rel="icon" href="/favicon.ico" />
         <meta name="keywords" content="development,developer,gdsc,google" />
-        <link rel="canonical" href={URL} />
         <meta name="description" content={DESCRIPTION} />
 
         <meta property="og:type" content="website" />
@@ -32,7 +30,6 @@ export default function Document() {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:image" content={IMAGE} />
-        <meta property="og:url" content={URL} />
 
         <meta name="twitter:creator" content="GDSC_AT_SKHU" />
         <meta name="twitter:title" content={TITLE} />
