@@ -6,7 +6,7 @@ import {
   defaultFadeInVariants,
   staggerFourFive,
 } from '../../constants/motions';
-import { bigCss, colors } from '../../styles/constants';
+import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
 const CORE_MEMBER_RECRUIT_LINK =
   'https://boom-galleon-6d9.notion.site/Core-f428033a4e594672b27091d054d613b7';
@@ -53,14 +53,8 @@ export default function RecruitSection() {
             width: 32rem;
             max-width: 100%;
             height: 5rem;
-            color: ${colors.gray500};
-            background-color: ${colors.white};
-            border-radius: 8px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 30px;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            ${defaultButtonCss}
 
             margin-bottom: 100px;
           `}

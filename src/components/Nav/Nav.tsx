@@ -23,7 +23,7 @@ export default function Nav() {
         z-index: 100;
       `}
     >
-      <Link href="/">
+      <Link href="/" scroll={false}>
         <a>
           <h1
             css={css`
@@ -37,10 +37,18 @@ export default function Nav() {
         </a>
       </Link>
 
-      <div>
+      <div
+        css={css`
+          display: flex;
+          gap: 0.75rem;
+        `}
+      >
         <a href={GDSC_LINK} target="_blank" rel="noreferrer">
-          GDSC
+          About
         </a>
+        <Link href="/contact" scroll={false}>
+          <a>Contact</a>
+        </Link>
       </div>
     </nav>
   );
