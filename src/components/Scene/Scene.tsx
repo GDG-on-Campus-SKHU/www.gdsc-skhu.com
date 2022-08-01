@@ -22,7 +22,6 @@ export default function Scene() {
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: -1;
       `}
     >
       <Canvas camera={{ position: [0, -10, 65], fov: isSmallToFov ? 80 : 50 }} dpr={[1, 2]}>

@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <footer
       css={css`
+        position: relative;
         width: 100%;
         background-color: ${colors.gray500};
         color: ${colors.white};
