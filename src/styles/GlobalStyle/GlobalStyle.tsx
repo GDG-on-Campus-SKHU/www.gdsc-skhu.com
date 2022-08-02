@@ -11,6 +11,9 @@ const globalCss = css`
   ${resetCss}
 
   :root {
+    max-width: 100vw;
+    overflow-x: hidden;
+
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue',
       'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
@@ -26,6 +29,12 @@ const globalCss = css`
       box-sizing: border-box;
       word-break: keep-all;
       word-wrap: break-word;
+
+      -ms-overflow-style: none; /* IE 11 */
+      scrollbar-width: none; /* Firefox 64 */
+      ::-webkit-scrollbar {
+        display: none !important;
+      }
     }
   }
 

@@ -19,25 +19,26 @@ export default function App({ Component, pageProps, router }: AppProps) {
       </Head>
       <GlobalStyle />
 
-      <div
-        css={css`
-          width: 100vw;
-          overflow-x: hidden;
-        `}
-      >
-        <Nav />
-        <Scene />
+      <Nav />
+      <Scene />
 
-        <AnimatePresence
-          exitBeforeEnter
-          onExitComplete={() => {
-            window.scrollTo(0, 0);
-          }}
+      <AnimatePresence
+        exitBeforeEnter
+        onExitComplete={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
+        <div
+          key={CURRENT_URL}
+          css={css`
+            position: relative;
+            z-index: 99;
+          `}
         >
-          <Component {...pageProps} key={CURRENT_URL} />
-        </AnimatePresence>
-        <Footer />
-      </div>
+          <Component {...pageProps} />
+        </div>
+      </AnimatePresence>
+      <Footer />
     </>
   );
 }
