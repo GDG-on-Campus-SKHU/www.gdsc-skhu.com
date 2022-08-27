@@ -8,8 +8,11 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
-const CORE_MEMBER_RECRUIT_LINK =
-  'https://boom-galleon-6d9.notion.site/Core-f428033a4e594672b27091d054d613b7';
+const WEB_RECRUIT_LINK = 'https://www.notion.so/GDSC-at-SKHU-Web-aa10310b18fa4145a7a19645d2b312cf';
+const IOS_RECRUIT_LINK =
+  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-iOS-9498b6c18067405aa925f652bc15264a';
+const JAVA_BACKEND_RECRUIT_LINK =
+  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Java-Backend-30fa0ee30bdb4d9fb7aa1200dcc9a9a1';
 
 export default function RecruitSection() {
   return (
@@ -41,39 +44,69 @@ export default function RecruitSection() {
           시작을 함께하고 싶다면
           <br />
         </motion.h2>
-
-        <motion.a
-          variants={defaultFadeInUpVariants}
-          href={CORE_MEMBER_RECRUIT_LINK}
-          target="_blank"
-          rel="noreferrer"
-          css={css`
-            font-size: 1.5rem;
-            font-weight: bold;
-            width: 32rem;
-            max-width: 100%;
-            height: 5rem;
-
-            ${defaultButtonCss}
-
-            margin-bottom: 100px;
-          `}
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          Core 멤버 지원하기
-        </motion.a>
-
-        <motion.p
-          variants={defaultFadeInVariants}
-          css={css`
-            align-self: flex-end;
-            color: ${colors.gray500};
-          `}
-        >
-          일반 멤버는 추후 모집 예정입니다.
-        </motion.p>
+        <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 멤버 지원하기" disable />
+        <RecruitAnchor href={IOS_RECRUIT_LINK} text="iOS 멤버 지원하기" disable />
+        <RecruitAnchor href={JAVA_BACKEND_RECRUIT_LINK} text="Java backend 멤버 지원하기" disable />
       </motion.div>
     </section>
+  );
+}
+
+interface RecruitAnchorProps {
+  href: string;
+  text: string;
+  disable?: boolean;
+}
+
+function RecruitAnchor({ href, text, disable = false }: RecruitAnchorProps) {
+  if (disable) {
+    return (
+      <motion.button
+        variants={defaultFadeInUpVariants}
+        onClick={() => {
+          alert('모집 기간이 아닙니다.');
+        }}
+        css={css`
+          ${defaultButtonCss}
+
+          font-size: 1.5rem;
+          font-weight: bold;
+          width: 32rem;
+          max-width: 100%;
+          height: 5rem;
+
+          margin-bottom: 14px;
+
+          color: ${colors.gray100};
+          background-color: rgba(255, 255, 255, 0.2);
+        `}
+      >
+        {text}
+      </motion.button>
+    );
+  }
+
+  return (
+    <motion.a
+      variants={defaultFadeInUpVariants}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      css={css`
+        ${defaultButtonCss}
+
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 32rem;
+        max-width: 100%;
+        height: 5rem;
+
+        margin-bottom: 14px;
+      `}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
+    >
+      {text}
+    </motion.a>
   );
 }
