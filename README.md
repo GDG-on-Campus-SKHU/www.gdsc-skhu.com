@@ -5,3 +5,25 @@
 # GSSC at SKHU homepage
 
 </div>
+
+## How to start
+
+```bash
+yarn # install dependencies
+yarn dev # development
+
+yarn build # build and start
+yarn start
+```
+
+## Tech stack
+
+- typescript
+- next.js
+- emotion
+- three.js with react-three/fiber and drei
+- eslint, prettier
+
+## History
+
+[릴리즈 확인하기](https://github.com/GDSC-at-SKHU/www.gdsc-skhu.com/releases)
