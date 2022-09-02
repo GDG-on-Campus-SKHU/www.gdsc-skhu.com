@@ -1,20 +1,18 @@
 import { css } from '@emotion/react';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import SEO from '../components/common/SEO';
-import { defaultEasing } from '../constants/motions';
+import { EMAIL, INSTAGRAM_ID, INSTAGRAM_LINK } from '../constants/common';
+import { defaultFadeInUpVariants } from '../constants/motions';
 import { colors, defaultButtonCss, layoutCss } from '../styles/constants';
-
-const EMAIL = 'gdsc.skhu@gmail.com';
-const PHONE = '010-5036-1390';
 
 export default function Contact() {
   return (
     <>
-      <SEO title="Contact to GDSC at SKHU" />
+      <SEO title="Contact to GDSC SKHU" />
 
       <motion.main
-        variants={rightInOutVariants}
+        variants={defaultFadeInUpVariants}
         initial="initial"
         animate="animate"
         exit="exit"
@@ -76,6 +74,7 @@ export default function Contact() {
           >
             <motion.a
               href={`mailto:${EMAIL}`}
+              target="_blank"
               css={css`
                 ${defaultButtonCss}
                 width: 100%;
@@ -91,7 +90,9 @@ export default function Contact() {
               <span>{EMAIL}</span>
             </motion.a>
 
-            <span
+            <motion.a
+              href={INSTAGRAM_LINK}
+              target="_blank"
               css={css`
                 ${defaultButtonCss}
                 width: 100%;
@@ -100,28 +101,15 @@ export default function Contact() {
                 justify-content: space-between;
                 padding: 0 1.25rem;
               `}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
             >
-              <span>Phone</span>
-              <span>{PHONE}</span>
-            </span>
+              <span>Instagram</span>
+              <span>{INSTAGRAM_ID}</span>
+            </motion.a>
           </section>
         </article>
       </motion.main>
     </>
   );
 }
-
-const rightInOutVariants: Variants = {
-  initial: {
-    x: '100vw',
-    transition: { duration: 0.75, ease: defaultEasing },
-  },
-  animate: {
-    x: 0,
-    transition: { duration: 0.75, ease: defaultEasing },
-  },
-  exit: {
-    x: '100vw',
-    transition: { duration: 0.75, ease: defaultEasing },
-  },
-};
