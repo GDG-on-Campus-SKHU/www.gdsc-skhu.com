@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src="https://user-images.githubusercontent.com/26461307/181782322-c653ce17-f8c3-40b0-9166-1d4311746a05.png" alt="gdsc skhu logo" width="40%" />
+<img width="40%" alt="GDSC SKHU LOGO - square" src="https://user-images.githubusercontent.com/26461307/188155312-00b762d9-08b8-485c-8b7c-e77cda705d9e.png">
 
 # GSSC SKHU homepage
 
