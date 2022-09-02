@@ -1,8 +1,8 @@
 <div align='center'>
 
-<img src="https://user-images.githubusercontent.com/26461307/181782322-c653ce17-f8c3-40b0-9166-1d4311746a05.png" alt="gdsc at skhu logo" width="40%" />
+<img src="https://user-images.githubusercontent.com/26461307/181782322-c653ce17-f8c3-40b0-9166-1d4311746a05.png" alt="gdsc skhu logo" width="40%" />
 
-# GSSC at SKHU homepage
+# GSSC SKHU homepage
 
 </div>
 
@@ -26,4 +26,4 @@ yarn start
 
 ## History
 
-[릴리즈 확인하기](https://github.com/GDSC-at-SKHU/www.gdsc-skhu.com/releases)
+[릴리즈 확인하기](https://github.com/GDSC-SKHU/www.gdsc-skhu.com/releases)

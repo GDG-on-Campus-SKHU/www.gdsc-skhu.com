@@ -30,9 +30,7 @@ export default function Nav() {
               line-height: 1.25rem;
             `}
           >
-            Google Developer Student Clubs
-            <br />
-            at SKHU
+            Google Developer Student Clubs SKHU
           </h1>
         </a>
       </Link>
