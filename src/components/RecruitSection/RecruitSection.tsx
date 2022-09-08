@@ -10,8 +10,8 @@ import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
 const WEB_RECRUIT_LINK =
   'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Web-aa10310b18fa4145a7a19645d2b312cf';
-const IOS_RECRUIT_LINK =
-  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-iOS-9498b6c18067405aa925f652bc15264a';
+const MOBILE_RECRUIT_LINK =
+  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Mobile-9498b6c18067405aa925f652bc15264a';
 const JAVA_BACKEND_RECRUIT_LINK =
   'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Java-Backend-30fa0ee30bdb4d9fb7aa1200dcc9a9a1';
 
@@ -46,7 +46,7 @@ export default function RecruitSection() {
           <br />
         </motion.h2>
         <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 멤버 지원하기" />
-        <RecruitAnchor href={IOS_RECRUIT_LINK} text="iOS 멤버 지원하기" />
+        <RecruitAnchor href={MOBILE_RECRUIT_LINK} text="Mobile 멤버 지원하기" />
         <RecruitAnchor href={JAVA_BACKEND_RECRUIT_LINK} text="Java backend 멤버 지원하기" />
       </motion.div>
     </section>

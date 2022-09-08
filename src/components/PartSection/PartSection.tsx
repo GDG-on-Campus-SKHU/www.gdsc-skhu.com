@@ -63,7 +63,7 @@ export default function PartSection() {
         <motion.article css={articleCss} variants={defaultFadeInUpVariants}>
           <h3>스터디 활동</h3>
           <p>
-            Web, iOS, Java backend 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을 진행해
+            Web, Mobile, Java backend 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을 진행해
             개발자로써의 첫 걸음을 돕습니다.
           </p>
         </motion.article>
