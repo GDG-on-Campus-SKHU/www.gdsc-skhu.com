@@ -45,9 +45,9 @@ export default function RecruitSection() {
           시작을 함께하고 싶다면
           <br />
         </motion.h2>
-        <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 멤버 지원하기" />
-        <RecruitAnchor href={MOBILE_RECRUIT_LINK} text="Mobile 멤버 지원하기" />
-        <RecruitAnchor href={JAVA_BACKEND_RECRUIT_LINK} text="Java backend 멤버 지원하기" />
+        <RecruitAnchor disable href={WEB_RECRUIT_LINK} text="Web 멤버 지원하기" />
+        <RecruitAnchor disable href={MOBILE_RECRUIT_LINK} text="Mobile 멤버 지원하기" />
+        <RecruitAnchor disable href={JAVA_BACKEND_RECRUIT_LINK} text="Java backend 멤버 지원하기" />
       </motion.div>
     </section>
   );
