@@ -18,11 +18,11 @@ yarn start
 
 ## Tech stack
 
-- typescript
-- next.js
-- emotion
-- three.js with react-three/fiber and drei
-- eslint, prettier
+- Typescript
+- Next.js
+- Emotion
+- Three.js with react-three/fiber and drei
+- Eslint, Prettier
 
 ## History
 
