@@ -8,6 +8,7 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
+const CORE_RECRUIT_LINK = 'https://forms.gle/yMqwni7zceuN95EB6';
 const WEB_RECRUIT_LINK =
   'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Web-aa10310b18fa4145a7a19645d2b312cf';
 const MOBILE_RECRUIT_LINK =
@@ -40,14 +41,15 @@ export default function RecruitSection() {
             margin-bottom: 120px;
           `}
         >
-          성공회대 GDSC의
+          성공회대 GDSC와
           <br />
-          시작을 함께하고 싶다면
+          함께하고 싶다면
           <br />
         </motion.h2>
+        <RecruitAnchor href={CORE_RECRUIT_LINK} text="Core 멤버 지원하기" />
         <RecruitAnchor disable href={WEB_RECRUIT_LINK} text="Web 멤버 지원하기" />
         <RecruitAnchor disable href={MOBILE_RECRUIT_LINK} text="Mobile 멤버 지원하기" />
-        <RecruitAnchor disable href={JAVA_BACKEND_RECRUIT_LINK} text="Java backend 멤버 지원하기" />
+        <RecruitAnchor disable href={JAVA_BACKEND_RECRUIT_LINK} text="Java Backend 멤버 지원하기" />
       </motion.div>
     </section>
   );
