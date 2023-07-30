@@ -24,10 +24,10 @@ export default function IntroduceSection() {
           height: 95vh;
         `}
       >
-        <MotionSpan key="a">성공회대에</MotionSpan>
-
+        <MotionSpan key="a">올해에도</MotionSpan>
+        <MotionSpan key="b">성공회대에</MotionSpan>
         <motion.span
-          key="b"
+          key="c"
           variants={defaultFadeInUpVariants}
           css={css`
             ${bigCss}
@@ -63,9 +63,7 @@ export default function IntroduceSection() {
           </span>
           가
         </motion.span>
-        <MotionSpan key="c">처음으로</MotionSpan>
         <MotionSpan key="d">유치되었습니다.</MotionSpan>
-
         <motion.p
           key="p-a"
           css={css`
@@ -75,11 +73,11 @@ export default function IntroduceSection() {
           `}
           variants={defaultFadeInVariants}
         >
-          Google과 함께 교내 최고의 개발 커뮤니티를 만들고자 합니다.
+          Google과 함께하는 교내 최고, 최대의 개발 커뮤니티 GDSC SKHU입니다.
         </motion.p>
 
         <motion.p key="p-b" css={paragraphCss} variants={defaultFadeInVariants}>
-          뜻을 함께하는 많은 분들과 함께하고 싶으니, 큰 관심 부탁드리겠습니다.
+          다양한 경험을 통해 더 나은 개발자가 되고 싶다면 함께해 주세요!
         </motion.p>
       </motion.div>
     </section>

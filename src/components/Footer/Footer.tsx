@@ -28,7 +28,7 @@ export default function Footer() {
             font-size: 0.75rem;
           `}
         >
-          &copy; 2022 Google Developer Student Clubs SKHU. All rights reserved.
+          &copy; 2022-2023 Google Developer Student Clubs SKHU. All rights reserved.
         </small>
       </div>
     </footer>
