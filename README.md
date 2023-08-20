@@ -2,7 +2,7 @@
 
 <img width="40%" alt="GDSC SKHU LOGO - square" src="https://user-images.githubusercontent.com/26461307/188155312-00b762d9-08b8-485c-8b7c-e77cda705d9e.png">
 
-# GSSC SKHU homepage
+# GDSC SKHU homepage
 
 </div>
 
