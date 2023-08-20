@@ -8,13 +8,10 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
-const CORE_RECRUIT_LINK = 'https://forms.gle/yMqwni7zceuN95EB6';
-const WEB_RECRUIT_LINK =
-  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Web-aa10310b18fa4145a7a19645d2b312cf';
-const MOBILE_RECRUIT_LINK =
-  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Mobile-9498b6c18067405aa925f652bc15264a';
-const JAVA_BACKEND_RECRUIT_LINK =
-  'https://boom-galleon-6d9.notion.site/GDSC-at-SKHU-Java-Backend-30fa0ee30bdb4d9fb7aa1200dcc9a9a1';
+const CORE_RECRUIT_LINK = 'https://forms.gle/ZkzY2fcrPnQdMY1t6';
+const WEB_RECRUIT_LINK = 'https://forms.gle/Hgz2GUsaNr4WBqmdA';
+const APP_RECRUIT_LINK = 'https://forms.gle/Udmh7Nc1vWuYeH9z8';
+const SERVER_RECRUIT_LINK = 'https://forms.gle/wGmNiVbREQ1jGTPD8';
 
 export default function RecruitSection() {
   return (
@@ -46,10 +43,10 @@ export default function RecruitSection() {
           함께하고 싶다면
           <br />
         </motion.h2>
-        <RecruitAnchor href={CORE_RECRUIT_LINK} text="Core 멤버 지원하기" />
-        <RecruitAnchor disable href={WEB_RECRUIT_LINK} text="Web 멤버 지원하기" />
-        <RecruitAnchor disable href={MOBILE_RECRUIT_LINK} text="Mobile 멤버 지원하기" />
-        <RecruitAnchor disable href={JAVA_BACKEND_RECRUIT_LINK} text="Java Backend 멤버 지원하기" />
+        <RecruitAnchor href={CORE_RECRUIT_LINK} text="Core 멤버 추가 모집 지원하기" />
+        <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 파트 멤버 지원하기" />
+        <RecruitAnchor href={APP_RECRUIT_LINK} text="App 파트 멤버 지원하기" />
+        <RecruitAnchor href={SERVER_RECRUIT_LINK} text="Server 파트 멤버 지원하기" />
       </motion.div>
     </section>
   );
