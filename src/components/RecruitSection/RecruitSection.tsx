@@ -8,10 +8,14 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
-const CORE_RECRUIT_LINK = 'https://forms.gle/ZkzY2fcrPnQdMY1t6';
-const WEB_RECRUIT_LINK = 'https://forms.gle/Hgz2GUsaNr4WBqmdA';
-const APP_RECRUIT_LINK = 'https://forms.gle/Udmh7Nc1vWuYeH9z8';
-const SERVER_RECRUIT_LINK = 'https://forms.gle/wGmNiVbREQ1jGTPD8';
+const CORE_RECRUIT_LINK =
+  'https://nova-car-18d.notion.site/GDSC-SKHU-Web-Part-Recruiting-50a69f91080044d380bb8ec274f0c4d5?pvs=4';
+const WEB_RECRUIT_LINK =
+  'https://nova-car-18d.notion.site/GDSC-SKHU-Web-Part-Recruiting-50a69f91080044d380bb8ec274f0c4d5?pvs=4';
+const APP_RECRUIT_LINK =
+  'https://nova-car-18d.notion.site/GDSC-SKHU-App-Part-Recruiting-3ac9e3c58b2e48cd96dc59359be7e30a?pvs=4';
+const SERVER_RECRUIT_LINK =
+  'https://nova-car-18d.notion.site/GDSC-SKHU-Server-Part-Recruiting-0d88775690fd43339631e3c1a3085fe4?pvs=4';
 
 export default function RecruitSection() {
   return (
