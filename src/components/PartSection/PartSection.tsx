@@ -66,8 +66,8 @@ export default function PartSection() {
         <motion.article css={articleCss} variants={defaultFadeInUpVariants}>
           <h3>스터디 활동</h3>
           <p>
-            Web, Mobile, Java Backend 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을 통해
-            파트별 스터디를 진행합니다.
+            Web, App, Server 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을 통해 파트별
+            스터디를 진행합니다.
             <br />
             <br />
             빠르게 성장하고 싶은 열정과 배우고자 하는 의지만 있다면 누구나 좋은 개발자로서의 첫
@@ -107,12 +107,13 @@ export default function PartSection() {
           <p>
             GDSC와 함께 진행한 다양한 활동 경험들을 통해,
             <a href={GOOGLE_SOLUTION_CHALLENGE_LINK} target="_blank" rel="noreferrer">
-              Google의 전세계적 개발 대회인 Solution Challenge
+              &nbsp;Google의 전 세계적 개발 대회인 Solution Challenge
             </a>
-            에 도전하는 것을 목표로 합니다.
+            에 도전하는 것을 목표로 합니다. Solution Challenge는 UN에서 정한 17가지 지속 발전 가능
+            개발 목표를 바탕으로 공동체 및 지역 사회의 문제를 해결하는 서비스를 개발하는 대회입니다.
             <br />
-            Solution Challenge에서 좋은 성적을 거두면 현직 Google 개발자의 멘토링을 받을 수
-            있습니다.
+            만일 Solution Challenge에서 좋은 성적을 거두면 현직 Google 개발자의 멘토링 기회 뿐만
+            아니라 많은 상금도 받을 수 있습니다!
           </p>
         </motion.article>
       </motion.div>
