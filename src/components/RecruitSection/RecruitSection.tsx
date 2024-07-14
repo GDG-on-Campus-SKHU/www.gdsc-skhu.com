@@ -8,8 +8,7 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
-const CORE_RECRUIT_LINK =
-  'https://nova-car-18d.notion.site/GDSC-SKHU-Web-Part-Recruiting-50a69f91080044d380bb8ec274f0c4d5?pvs=4';
+const CORE_RECRUIT_LINK = 'https://forms.gle/r9giG34L49Wk1ngo8';
 const WEB_RECRUIT_LINK =
   'https://nova-car-18d.notion.site/GDSC-SKHU-Web-Part-Recruiting-50a69f91080044d380bb8ec274f0c4d5?pvs=4';
 const APP_RECRUIT_LINK =
@@ -47,10 +46,7 @@ export default function RecruitSection() {
           함께하고 싶다면
           <br />
         </motion.h2>
-        <RecruitAnchor href={CORE_RECRUIT_LINK} text="Core 멤버 추가 모집 지원하기" />
-        <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 파트 멤버 지원하기" />
-        <RecruitAnchor href={APP_RECRUIT_LINK} text="App 파트 멤버 지원하기" />
-        <RecruitAnchor href={SERVER_RECRUIT_LINK} text="Server 파트 멤버 지원하기" />
+        <RecruitAnchor href={CORE_RECRUIT_LINK} text="Core 멤버 모집 지원하기" />
       </motion.div>
     </section>
   );
