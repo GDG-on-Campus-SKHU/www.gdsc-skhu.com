@@ -8,13 +8,16 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
-const CORE_RECRUIT_LINK = 'https://forms.gle/r9giG34L49Wk1ngo8';
-const WEB_RECRUIT_LINK =
-  'https://nova-car-18d.notion.site/GDSC-SKHU-Web-Part-Recruiting-50a69f91080044d380bb8ec274f0c4d5?pvs=4';
-const APP_RECRUIT_LINK =
-  'https://nova-car-18d.notion.site/GDSC-SKHU-App-Part-Recruiting-3ac9e3c58b2e48cd96dc59359be7e30a?pvs=4';
-const SERVER_RECRUIT_LINK =
-  'https://nova-car-18d.notion.site/GDSC-SKHU-Server-Part-Recruiting-0d88775690fd43339631e3c1a3085fe4?pvs=4';
+const REACT_RECRUIT_LINK =
+  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-React-Team-Recruiting-eeaf91e977804acc95aa3ad4a3dd7597?pvs=4';
+const FLUTTER_RECRUIT_LINK =
+  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-Flutter-Team-Recruiting-f4c0551089544937bb53b0c5d678a36b?pvs=4';
+const SPRING_RECRUIT_LINK =
+  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-Spring-Team-Recruiting-f87babd9aac74463bc1fd4efb35cad29?pvs=4';
+const PM_RECRUIT_LINK =
+  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-PM-Part-Recruiting-6bf72d1d772b4d3da0c225e2d8ace302?pvs=4';
+const AI_RECRUIT_LINK =
+  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-AI-ML-Team-Recruiting-4fea39476b6e4a4898292d893acf03cf?pvs=4';
 
 export default function RecruitSection() {
   return (
@@ -46,7 +49,11 @@ export default function RecruitSection() {
           함께하고 싶다면
           <br />
         </motion.h2>
-        <RecruitAnchor href={CORE_RECRUIT_LINK} text="Core 멤버 모집 지원하기" />
+        <RecruitAnchor href={REACT_RECRUIT_LINK} text="React 파트 멤버 지원하기" />
+        <RecruitAnchor href={FLUTTER_RECRUIT_LINK} text="Flutter 파트 멤버 지원하기" />
+        <RecruitAnchor href={SPRING_RECRUIT_LINK} text="Spring 파트 멤버 지원하기" />
+        <RecruitAnchor href={AI_RECRUIT_LINK} text="AI/ML 파트 멤버 지원하기" />
+        <RecruitAnchor href={PM_RECRUIT_LINK} text="PM 파트 멤버 지원하기" />
       </motion.div>
     </section>
   );
