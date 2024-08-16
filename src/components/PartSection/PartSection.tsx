@@ -66,7 +66,7 @@ export default function PartSection() {
         <motion.article css={articleCss} variants={defaultFadeInUpVariants}>
           <h3>스터디 활동</h3>
           <p>
-            React, Mobile, Spring, Node, AI/ML 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을
+            React, Flutter, Spring, AI/ML, PM 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을
             통해 파트별 스터디를 진행합니다.
             <br />
             <br />
