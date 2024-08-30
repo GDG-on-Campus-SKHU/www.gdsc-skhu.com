@@ -8,11 +8,11 @@ import {
 } from '../../constants/motions';
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
-const REACT_RECRUIT_LINK =
+const WEB_RECRUIT_LINK =
   'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-React-Team-Recruiting-eeaf91e977804acc95aa3ad4a3dd7597?pvs=4';
-const FLUTTER_RECRUIT_LINK =
+const APP_RECRUIT_LINK =
   'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-Flutter-Team-Recruiting-f4c0551089544937bb53b0c5d678a36b?pvs=4';
-const SPRING_RECRUIT_LINK =
+const SERVER_RECRUIT_LINK =
   'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-Spring-Team-Recruiting-f87babd9aac74463bc1fd4efb35cad29?pvs=4';
 const PM_RECRUIT_LINK =
   'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-PM-Part-Recruiting-6bf72d1d772b4d3da0c225e2d8ace302?pvs=4';
@@ -49,9 +49,9 @@ export default function RecruitSection() {
           함께하고 싶다면
           <br />
         </motion.h2>
-        <RecruitAnchor href={REACT_RECRUIT_LINK} text="React 파트 멤버 지원하기" />
-        <RecruitAnchor href={FLUTTER_RECRUIT_LINK} text="Flutter 파트 멤버 지원하기" />
-        <RecruitAnchor href={SPRING_RECRUIT_LINK} text="Spring 파트 멤버 지원하기" />
+        <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 파트 멤버 지원하기" />
+        <RecruitAnchor href={APP_RECRUIT_LINK} text="App 파트 멤버 지원하기" />
+        <RecruitAnchor href={SERVER_RECRUIT_LINK} text="Server 파트 멤버 지원하기" />
         <RecruitAnchor href={AI_RECRUIT_LINK} text="AI/ML 파트 멤버 지원하기" />
         <RecruitAnchor href={PM_RECRUIT_LINK} text="PM 파트 멤버 지원하기" />
       </motion.div>
