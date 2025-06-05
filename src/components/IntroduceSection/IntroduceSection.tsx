@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { PropsWithChildren } from 'react';
 import { css } from '@emotion/react';
 import { motion } from 'framer-motion';

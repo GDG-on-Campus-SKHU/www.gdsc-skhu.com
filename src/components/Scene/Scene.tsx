@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { Suspense, useRef } from 'react';
 import { css } from '@emotion/react';
 import { ContactShadows, OrbitControls } from '@react-three/drei';
@@ -47,7 +48,10 @@ export default function Scene() {
               width={100}
               height={100}
               blur={0.7}
-              far={100} matrixWorldAutoUpdate={undefined} getObjectsByProperty={undefined}            />
+              far={100}
+              matrixWorldAutoUpdate={undefined}
+              getObjectsByProperty={undefined}
+            />
           </group>
         </Suspense>
       </Canvas>
