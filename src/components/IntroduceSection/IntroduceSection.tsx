@@ -24,8 +24,8 @@ export default function IntroduceSection() {
           height: 95vh;
         `}
       >
-        <MotionSpan key="a">올해에도</MotionSpan>
-        <MotionSpan key="b">성공회대에</MotionSpan>
+        <MotionSpan key="a">벌써 4번째,</MotionSpan>
+        <MotionSpan key="b">성장을 위한 도약</MotionSpan>
         <motion.span
           key="c"
           variants={defaultFadeInUpVariants}
@@ -52,18 +52,18 @@ export default function IntroduceSection() {
               color: ${colors.gdscYellow};
             `}
           >
-            S
+            G
           </span>
           <span
             css={css`
               color: ${colors.gdscGreen};
             `}
           >
-            C
+            oC
           </span>
           가
         </motion.span>
-        <MotionSpan key="d">유치되었습니다.</MotionSpan>
+        <MotionSpan key="d">올해에도 찾아옵니다.</MotionSpan>
         <motion.p
           key="p-a"
           css={css`
@@ -73,7 +73,7 @@ export default function IntroduceSection() {
           `}
           variants={defaultFadeInVariants}
         >
-          Google과 함께하는 교내 최고, 최대의 개발 커뮤니티 GDSC SKHU입니다.
+          Google과 함께하는 교내 최고, 최대의 개발 커뮤니티 GDGoC SKHU입니다.
         </motion.p>
 
         <motion.p key="p-b" css={paragraphCss} variants={defaultFadeInVariants}>
