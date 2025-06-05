@@ -1,6 +1,6 @@
-<div align='center'>z
-
-<img width="40%" alt="GDGoC SKHU LOGO - square" src="https://user-images.githubusercontent.com/26461307/188155312-00b762d9-08b8-485c-8b7c-e77cda705d9e.png">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d42c3ca7-5b1d-41e0-91cc-a5957feb5b7c" width="350" />
+</div>
 
 # GDGoC SKHU homepage
 
