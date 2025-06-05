@@ -23,7 +23,6 @@ module.exports = {
         varsIgnorePattern: '_',
       },
     ],
-
     'prefer-const': 'error',
     'no-var': 'error',
     'react-hooks/rules-of-hooks': 'error',
@@ -31,7 +30,6 @@ module.exports = {
     'react/jsx-no-target-blank': 'error',
     'import/no-duplicates': 'error',
     'import/newline-after-import': 'error',
-
     'simple-import-sort/imports': [
       'error',
       {
@@ -43,8 +41,48 @@ module.exports = {
       },
     ],
     'simple-import-sort/exports': 'error',
-
     'import/default': 'off',
     'import/namespace': 'off',
   },
+
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
+
+  settings: {
+    react: {
+      version: 'detect',
+      pragma: 'React',
+      jsxPragma: 'jsx',
+    },
+  },
+
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        jsxImportSource: '@emotion/react',
+      },
+      rules: {
+        'react/no-unknown-property': [
+          'error',
+          {
+            ignore: [
+              'css',
+              'position',
+              'intensity',
+              'groundColor',
+              'dispose',
+              'geometry',
+              'rotation',
+            ],
+          },
+        ],
+      },
+    },
+  ],
 };

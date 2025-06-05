@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { useGLTF } from '@react-three/drei';
 import { Euler, Vector3 } from '@react-three/fiber';
 import { BufferGeometry } from 'three';

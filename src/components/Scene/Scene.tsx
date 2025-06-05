@@ -49,8 +49,6 @@ export default function Scene() {
               height={100}
               blur={0.7}
               far={100}
-              matrixWorldAutoUpdate={undefined}
-              getObjectsByProperty={undefined}
             />
           </group>
         </Suspense>
