@@ -9,15 +9,17 @@ import {
 import { bigCss, colors, defaultButtonCss } from '../../styles/constants';
 
 const WEB_RECRUIT_LINK =
-  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-React-Team-Recruiting-eeaf91e977804acc95aa3ad4a3dd7597?pvs=4';
+  'https://noble-animal-f7e.notion.site/GDGoC-4-209dacc0346380f380adef75e3e201fc';
 const APP_RECRUIT_LINK =
-  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-Flutter-Team-Recruiting-f4c0551089544937bb53b0c5d678a36b?pvs=4';
+  'https://noble-animal-f7e.notion.site/GDGoC-4-209dacc0346380f380adef75e3e201fc';
 const SERVER_RECRUIT_LINK =
-  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-Spring-Team-Recruiting-f87babd9aac74463bc1fd4efb35cad29?pvs=4';
+  'https://noble-animal-f7e.notion.site/GDGoC-4-209dacc0346380f380adef75e3e201fc';
 const PM_RECRUIT_LINK =
-  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-PM-Part-Recruiting-6bf72d1d772b4d3da0c225e2d8ace302?pvs=4';
+  'https://noble-animal-f7e.notion.site/GDGoC-4-209dacc0346380f380adef75e3e201fc';
 const AI_RECRUIT_LINK =
-  'https://windy-bedbug-ef3.notion.site/GDSC-SKHU-AI-ML-Team-Recruiting-4fea39476b6e4a4898292d893acf03cf?pvs=4';
+  'https://noble-animal-f7e.notion.site/GDGoC-4-209dacc0346380f380adef75e3e201fc';
+const DESIGN_RECRUIT_LINK =
+  'https://noble-animal-f7e.notion.site/GDGoC-4-209dacc0346380f380adef75e3e201fc';
 
 export default function RecruitSection() {
   return (
@@ -44,16 +46,17 @@ export default function RecruitSection() {
             margin-bottom: 120px;
           `}
         >
-          성공회대 GDSC와
+          성공회대 GDGoC와
           <br />
           함께하고 싶다면
           <br />
         </motion.h2>
+        <RecruitAnchor href={AI_RECRUIT_LINK} text="AI/ML 파트 멤버 지원하기" />
+        <RecruitAnchor href={PM_RECRUIT_LINK} text="PM 파트 멤버 지원하기" />
+        <RecruitAnchor href={DESIGN_RECRUIT_LINK} text="Design 파트 멤버 지원하기" />
         <RecruitAnchor href={WEB_RECRUIT_LINK} text="Web 파트 멤버 지원하기" />
         <RecruitAnchor href={APP_RECRUIT_LINK} text="App 파트 멤버 지원하기" />
         <RecruitAnchor href={SERVER_RECRUIT_LINK} text="Server 파트 멤버 지원하기" />
-        <RecruitAnchor href={AI_RECRUIT_LINK} text="AI/ML 파트 멤버 지원하기" />
-        <RecruitAnchor href={PM_RECRUIT_LINK} text="PM 파트 멤버 지원하기" />
       </motion.div>
     </section>
   );

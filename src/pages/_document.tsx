@@ -2,8 +2,8 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 import { IS_PRODUCTION } from '../constants/common';
 
-const TITLE = 'GDSC SKHU';
-const DESCRIPTION = 'Google developer student clubs SKHU';
+const TITLE = 'GDGoC SKHU';
+const DESCRIPTION = 'Google Developer Group on Campus SKHU';
 const IMAGE = '/gdsc_skhu.png';
 
 const GA_ID = 'G-SF5GEJR7Z9';

@@ -1,8 +1,8 @@
-<div align='center'>
+<div align='center'>z
 
-<img width="40%" alt="GDSC SKHU LOGO - square" src="https://user-images.githubusercontent.com/26461307/188155312-00b762d9-08b8-485c-8b7c-e77cda705d9e.png">
+<img width="40%" alt="GDGoC SKHU LOGO - square" src="https://user-images.githubusercontent.com/26461307/188155312-00b762d9-08b8-485c-8b7c-e77cda705d9e.png">
 
-# GDSC SKHU homepage
+# GDGoC SKHU homepage
 
 </div>
 

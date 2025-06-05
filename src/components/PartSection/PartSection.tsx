@@ -9,7 +9,7 @@ import {
 import { bigCss, colors, mediaQuery } from '../../styles/constants';
 
 const GOOGLE_SOLUTION_CHALLENGE_LINK =
-  'https://developers.google.com/community/gdsc-solution-challenge';
+  'https://developers.google.com/community/GDSC-solution-challenge';
 
 export default function PartSection() {
   return (
@@ -35,7 +35,7 @@ export default function PartSection() {
           }
         `}
       >
-        GDSC만의 경험
+        GDGoC만의 경험
       </motion.h2>
 
       <motion.div
@@ -55,10 +55,10 @@ export default function PartSection() {
         <motion.article css={articleCss} variants={defaultFadeInUpVariants}>
           <h3>친목 활동</h3>
           <p>
-            GDSC는 개발에 있어 다른 무엇보다 협력과 소통이 가장 중요하다고 생각합니다.
+            GDGoC는 개발에 있어 다른 무엇보다 협력과 소통이 가장 중요하다고 생각합니다.
             <br />
             <br />
-            개강과 종강 파티, 즐거운 MT, 맛있는 회식 등, GDSC와 함께했을 때 보다 활기차고 신나는
+            친해지길 바래 MT와 종강 파티, 즐거운 회식 등, GDGoC와 함께했을 때 보다 활기차고 신나는
             대학 생활을 누리며 멤버들이 더 넓은 인간 관계를 가질 수 있도록 계획하고 있습니다.
           </p>
         </motion.article>
@@ -66,7 +66,7 @@ export default function PartSection() {
         <motion.article css={articleCss} variants={defaultFadeInUpVariants}>
           <h3>스터디 활동</h3>
           <p>
-            Web, App, Server, AI/ML, PM 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을 통해
+            Web, App, Server, AI/ML, PM, DESIGN 과정으로 나누어, 입문자를 기준으로 설계한 커리큘럼을 통해
             파트별 스터디를 진행합니다.
             <br />
             <br />
@@ -105,7 +105,7 @@ export default function PartSection() {
         <motion.article css={articleCss({ width: '95%' })} variants={defaultFadeInUpVariants}>
           <h3>Solution Challenge</h3>
           <p>
-            GDSC와 함께 진행한 다양한 활동 경험들을 통해,
+            GDGoC와 함께 진행한 다양한 활동 경험들을 통해,
             <a href={GOOGLE_SOLUTION_CHALLENGE_LINK} target="_blank" rel="noreferrer">
               &nbsp;Google의 전 세계적 개발 대회인 Solution Challenge
             </a>

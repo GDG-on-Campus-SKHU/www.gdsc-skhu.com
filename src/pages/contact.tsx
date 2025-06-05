@@ -9,7 +9,7 @@ import { colors, defaultButtonCss, layoutCss } from '../styles/constants';
 export default function Contact() {
   return (
     <>
-      <SEO title="Contact to GDSC SKHU" />
+      <SEO title="Contact to GDGoC SKHU" />
 
       <motion.main
         variants={defaultFadeInUpVariants}

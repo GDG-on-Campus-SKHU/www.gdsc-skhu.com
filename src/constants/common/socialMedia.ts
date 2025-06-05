@@ -1,4 +1,4 @@
-export const EMAIL = 'gdsc.skhu@gmail.com';
+export const EMAIL = 'gdg.skhu@gmail.com';
 
-export const INSTAGRAM_ID = 'gdsc.skhu';
-export const INSTAGRAM_LINK = 'https://www.instagram.com/gdsc.skhu/';
+export const INSTAGRAM_ID = 'gdgoc.skhu';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/gdgoc.skhu/';

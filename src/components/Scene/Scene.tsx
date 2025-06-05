@@ -47,8 +47,7 @@ export default function Scene() {
               width={100}
               height={100}
               blur={0.7}
-              far={100}
-            />
+              far={100} matrixWorldAutoUpdate={undefined} getObjectsByProperty={undefined}            />
           </group>
         </Suspense>
       </Canvas>

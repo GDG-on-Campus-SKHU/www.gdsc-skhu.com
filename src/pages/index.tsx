@@ -11,7 +11,7 @@ import { layoutCss } from '../styles/constants/layout';
 export default function Root() {
   return (
     <>
-      <SEO title="GDSC SKHU" />
+      <SEO title="GDGoC SKHU" />
 
       <motion.main
         variants={defaultFadeInVariants}
