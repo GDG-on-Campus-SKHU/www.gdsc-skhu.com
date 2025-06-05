@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { css } from '@emotion/react';
