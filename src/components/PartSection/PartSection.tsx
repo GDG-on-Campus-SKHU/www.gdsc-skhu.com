@@ -6,7 +6,7 @@ import {
   defaultFadeInVariants,
   staggerOne,
 } from '../../constants/motions';
-import { bigCss, colors, mediaQuery } from '../../styles/constants';
+import { bigCss, colors, glassCardCss, mediaQuery } from '../../styles/constants';
 
 const GOOGLE_SOLUTION_CHALLENGE_LINK =
   'https://developers.google.com/community/GDSC-solution-challenge';
@@ -122,11 +122,11 @@ export default function PartSection() {
 }
 
 const articleCss = ({ width = '30%' }: { width?: string }) => css`
+  ${glassCardCss};
+  display: block;
   width: ${width};
-  background-color: white;
   padding: 16px 14px;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 30px;
 
   & > h3 {
     font-size: 1.5rem;
