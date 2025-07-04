@@ -6,7 +6,7 @@ import {
   defaultFadeInVariants,
   staggerOne,
 } from '../../constants/motions';
-import { bigCss, colors, mediaQuery, glassCardCss } from '../../styles/constants';
+import { bigCss, colors, glassCardCss, mediaQuery } from '../../styles/constants';
 
 const GOOGLE_SOLUTION_CHALLENGE_LINK =
   'https://developers.google.com/community/GDSC-solution-challenge';
@@ -126,7 +126,7 @@ const articleCss = ({ width = '30%' }: { width?: string }) => css`
   display: block;
   width: ${width};
   padding: 16px 14px;
-  border-radius: 8px; 
+  border-radius: 8px;
 
   & > h3 {
     font-size: 1.5rem;

@@ -47,40 +47,37 @@ export const glassButtonCss = css`
 
   border: 2px solid rgba(255, 255, 255, 0.8);
 
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.1),     /* 부드러운 드롭 섀도우 */
-    inset 0 1px 0 rgba(255, 255, 255, 0.5); /* 안쪽 하이라이트 */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: -1px; left: -1px; right: -1px;
+    top: -1px;
+    left: -1px;
+    right: -1px;
     height: 50%;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     pointer-events: none;
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
-    bottom: -2px; left: 0; right: 0; height: 100%;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 100%;
     box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.05);
     border-radius: inherit;
     pointer-events: none;
   }
 
-  color:rgb(24, 24, 24);
+  color: rgb(24, 24, 24);
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow:
-      0 30px 60px rgba(0, 0, 0, 0.15),
-      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
   }
 `;
