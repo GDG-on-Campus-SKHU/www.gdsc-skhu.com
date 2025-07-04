@@ -49,6 +49,7 @@ export default function RecruitSection() {
           `}
         >
           성공회대 GDGoC와
+          성공회대 GDGoC와
           <br />
           함께하고 싶다면
           <br />
